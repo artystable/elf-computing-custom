@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import FeatureStore from './FeatureStore'
-import FeaturesContainer from './FeaturesContainer';
+import FeatureDetails from './FeatureDetails'
+import FeatureContainer from './FeatureContainer';
 import ShoppingCart from './ShoppingCart';
 import Header from './Header';
 
@@ -45,8 +45,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <FeaturesContainer
-            features={FeatureStore}
+          <FeatureContainer
+            features={FeatureDetails}
             handleUpdate={(feature, newValue) => this.updateFeature(feature, newValue)}
             selected={this.state.selected}
           />
